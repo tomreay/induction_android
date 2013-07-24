@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Induction</string>
+    <string name="Loading____">Loading &#8230;</string>
+    <string name="Saving____">Saving &#8230;</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Save">Save</string>
+    <string name="Phone">Phone</string>
+    <string name="Bleep">Bleep</string>
+
+    <!-- Choose Your Hospital screen -->
+    <string name="Choose_Your_Hospital">Choose Your Hospital</string>
+    <string name="Search">Search</string>
+    
+    <!-- Search Hospital screen -->
+    <string name="Search_Hospital">Search Hospital</string>
+
+    <!-- Main screen -->
+    <string name="action_settings">Settings</string>
+    <string name="Get_started_here">Get started here</string>
+    <string name="Directory">Directory</string>
+    <string name="Quick_Dial">Quick Dial</string>
+    <string name="Add">Add</string>
+
+    <!-- Directory screen -->
+    <string name="Add_Number">Add Number</string>
+    <string name="Photograph_list">Photograph list</string>
+    <string name="Email_number">Email number</string>
+
+    <!-- Quick Dial screen -->
+    <string name="Dial_Hint">Enter the extension &#8230;</string>
+
+    <!-- Settings screen -->
+    <string name="Settings">Settings</string>
+    <string name="Change_default_hospital">Change default hospital</string>
+    <string name="Set_hospital_prefix">Set hospital prefix</string>
+    <string name="Send_us_feedback">Send us feedback</string>
+    <string name="Share_Induction">Share Induction</string>
+
+    <!-- Change Default Hospital screen -->
+    <string name="Default_Hospital">Default Hospital</string>
+
+    <!-- Hospital Prefix screen -->
+    <string name="Hospital_Prefix">Hospital Prefix</string>
+    <string name="Hospital_Prefix_Hint">e.g. 0207813</string>
+    <string name="Hospital_Prefix_Desc">Then you can call extensions from this phone</string>
+
+    <!-- Add Number screen -->
+    <string name="Number_Name_Hint">Who or What</string>
+    <string name="Number_EXtension_Hint">Extension or full number</string>
+
+</resources>

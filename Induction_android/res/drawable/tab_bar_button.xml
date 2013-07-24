@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_focused="true" android:drawable="@drawable/tab_selected_pressed_induction" /> //currently pressed turning the toggle on
+    <item android:state_focused="true" android:drawable="@drawable/tab_unselected_pressed_induction" /> //currently pressed turning the toggle off
+    <item android:state_checked="true" android:drawable="@drawable/tab_selected_induction" /> //not pressed default checked state
+    <item android:drawable="@android:color/transparent" /> //default non-pressed non-checked
+</selector>

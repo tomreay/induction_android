@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BACKGROUND_COLOR"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddNumberActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" >
+
+        <ToggleButton
+            android:id="@+id/toggleButtonPhone"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/on_off_button"
+            android:checked="true"
+            android:textColor="@color/WHITE_TEXTCOLOR"
+            android:textOff="Phone"
+            android:textOn="Phone"
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonBleep"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/on_off_button"
+            android:textColor="@color/BLACK_TEXTCOLOR"
+            android:textOff="Bleep"
+            android:textOn="Bleep"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextNumberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:ems="10"
+        android:hint="@string/Number_Name_Hint"
+        android:inputType="textCapWords"
+        android:textColor="@color/BLACK_TEXTCOLOR"
+        tools:ignore="TextFields" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextNumberExtension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:ems="10"
+        android:hint="@string/Number_EXtension_Hint"
+        android:inputType="phone"
+        android:textColor="@color/BLACK_TEXTCOLOR" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/Save"
+        android:textColor="@color/BLACK_TEXTCOLOR" />
+
+</LinearLayout>

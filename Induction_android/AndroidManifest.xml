@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hermes.induction"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_logo"
+        android:theme="@style/Theme.Induction" >
+
+        <!-- Splash screen -->
+        <activity
+            android:name="com.hermes.induction.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Choose Your Hospital screen -->
+        <activity
+            android:name="com.hermes.induction.SetupHospitalActivity"
+            android:label="@string/Choose_Your_Hospital"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+		
+        <!-- Search Hospital screen -->
+        <activity
+            android:name="com.hermes.induction.SearchHospitalActivity"
+            android:label="@string/Search_Hospital"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Main screen -->
+        <activity
+            android:name="com.hermes.induction.MainActivity"
+            android:label="@string/Choose_Your_Hospital"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Settings screen -->
+        <activity
+            android:name="com.hermes.induction.SettingsActivity"
+            android:label="@string/Settings"
+            android:screenOrientation="portrait" />
+
+        <!-- Change Default Hospital screen -->
+        <activity
+            android:name="com.hermes.induction.ChangeDefaultHospitalActivity"
+            android:label="@string/Default_Hospital"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Hospital Prefix screen -->
+        <activity
+            android:name="com.hermes.induction.HospitalPrefixActivity"
+            android:label="@string/Hospital_Prefix"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Directory Adding screen -->
+        <activity
+            android:name="com.hermes.induction.DirectoryAddingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hermes.induction.AddNumberActivity"
+            android:label="@string/Add_Number"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+</manifest>
