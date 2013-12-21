@@ -87,8 +87,9 @@ public class DirectoryFragment extends SherlockFragment {
 			query.whereEqualTo("parent", ParseObject.createWithoutData("Hospital", hospitalId));
 			query.whereExists("name");
 			query.whereNotEqualTo("forReview", Boolean.valueOf(true));
-			query.orderByAscending("name");
-			query.setCachePolicy(ParseQuery.CachePolicy.NETWORK_ELSE_CACHE);
+            query.orderByAscending("name");
+            query.setLimit(Constants.PARSE_QUERY_LIMIT);
+            query.setCachePolicy(ParseQuery.CachePolicy.NETWORK_ELSE_CACHE);
 			try {
 				results = query.find();
 			} catch (ParseException e) {

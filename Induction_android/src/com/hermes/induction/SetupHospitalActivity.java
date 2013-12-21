@@ -182,6 +182,13 @@ public class SetupHospitalActivity extends SherlockActivity {
 		
 	}
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        locationManager.removeUpdates(locationListenerGps);
+        locationManager.removeUpdates(locationListenerNetwork);
+    }
+
 	public void onSelectHospital(int position) {
 		ParseObject defaultItem = items.get(position);
 		defaultItem.increment("setDefaultCounter");
